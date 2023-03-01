@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div>
+      <h1>Calculadora</h1>
+    </div>
+    <div class="card-header">
+      <p id="display"></p>
+    </div>
+    <div class="container-btn">
+      <button class="btn" id="btn-7" onclick="inserir(7)">7</button>
+      <button class="btn" id="btn-8" onclick="inserir(8)">8</button>
+      <button class="btn" id="btn-9" onclick="inserir(9)">9</button>
+      <button id="del" onclick="del()">DEL</button> <br>
+      <button class="btn" id="btn-4" onclick="inserir(4)">4</button>
+      <button class="btn" id="btn-5" onclick="inserir(5)">5</button>
+      <button class="btn" id="btn-6" onclick="inserir(6)">6</button>
+      <button class="btn" id="operador-soma" onclick="soma()">+</button> <br>
+      <button class="btn" id="btn-1" onclick="inserir(1)">1</button>
+      <button class="btn" id="btn-2" onclick="inserir(2)">2</button>
+      <button class="btn" id="btn-3" onclick="inserir(3)">3</button>
+      <button class="btn" id="operador-subtrair" onclick="subtrair()">-</button> <br>
+      <button class="btn" id="btn-virgula" onclick="virgula()">,</button>
+      <button class="btn" id="btn-0" onclick="inserir(0)">0</button>
+      <button class="btn" id="operador-dividir" onclick="dividir()">/</button>
+      <button class="btn" id="operador-multiplicar" onclick="multiplicar()">*</button> <br>
+      <button id="reset" onclick="reset()">RESET</button>
+      <button id="resultado" onclick="resultado()">=</button>
+    </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
